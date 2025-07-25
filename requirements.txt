@@ -1,0 +1,4 @@
+spotipy>=2.22.1
+aiohttp>=3.8.0
+mcp>=0.5.0
+asyncio
