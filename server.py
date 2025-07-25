@@ -1,27 +1,17 @@
 import asyncio
-import json
-import logging
-import asyncio
-import json
 import logging
 import os
 import sys
-from typing import Any, Dict, List, Optional, Sequence
-from urllib.parse import urlencode, parse_qs
-import base64
-import hashlib
-import secrets
+from typing import Any, Dict, List, Optional
 import webbrowser
-from datetime import datetime, timedelta
 import aiohttp
 from aiohttp import web
 import spotipy
 from spotipy.oauth2 import SpotifyOAuth
 from mcp.server.models import InitializationOptions
 from mcp.server import NotificationOptions, Server
-from mcp.types import Resource, Tool, TextContent, ImageContent, EmbeddedResource
+from mcp.types import Tool
 import mcp.types as types
-import threading
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
