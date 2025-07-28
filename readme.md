@@ -1,154 +1,104 @@
-# Spotify-MCP
+# Spotipy MCP Server
 
-A command-line and Claude-compatible tool server for controlling Spotify playback using Python.  
-Built with spotipy, aiohttp, and rich for a clean CLI and AI-integrated experience.
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/license/mit/)
+[![Python](https://img.shields.io/badge/Python-3.9%2B-blue)](https://www.python.org/)
+[![CLI Support](https://img.shields.io/badge/Mode-CLI%20%7C%20AI-green)](#)
+[![Spotify](https://img.shields.io/badge/Library-spotify-green)](https://spotipy.readthedocs.io/en/2.22.1/)
+[![PRs](https://img.shields.io/badge/PRs-Welcome-brightgreen.svg)](CONTRIBUTING.md)
 
----
-
-## 🔹 Features
-
-- Authenticate with Spotify via OAuth
-- Play, pause, skip, or resume tracks
-- Control volume and playback
-- Search songs, artists, albums, or playlists
-- Create and manage your own playlists
-- Get current playback info
-- Claude (or other LLMs) can call all features via MCP
+**Spotipy** is a dual-mode Spotify control server built in Python. It provides:
+- a rich, animated command-line interface for manual control
+- a Machine Control Protocol (MCP) interface for AI agents like Claude or ChatGPT
 
 ---
 
-## 🔹 Modes of Operation
+## Features
 
-This project supports two modes:
+- Spotify authentication via OAuth
+- Play/pause/resume/skip music
+- Set playback volume
+- Search music by track, artist, album, or playlist
+- View current playback status
+- Create and modify user playlists
+- Use manually (CLI) or automatically (AI tool calls)
 
-### 1. Manual CLI Mode
+---
 
-Launches a full-featured terminal UI with a clean menu system:
+## Modes of Operation
 
+### 1. CLI Mode (Manual Control)
 ```bash
 python server.py --mode=manual
 ```
+You’ll see an interactive menu that lets you:
+- Play songs
+- Search tracks
+- Create playlists
+- And more
 
-You’ll see a menu like:
-
-```
-1. Authenticate Spotify
-2. Play a Song
-3. Pause Playback
-...
-13. Exit
-```
-
-### 2. AI Mode (Claude Desktop / LangChain / OpenAI)
-
-Runs the MCP tool server that allows Claude or other agents to call your tools:
-
+### 2. AI Mode (Claude/Desktop MCP)
 ```bash
 python server.py --mode=ai
 ```
-
 ---
 
-## 🔹 Requirements
+## Setup & Installation
 
-Install dependencies:
+### Requirements
+- Python 3.9+
+- Spotify Developer Credentials
 
+### Install Dependencies
 ```bash
 pip install -r requirements.txt
 ```
 
-Example `requirements.txt`:
-
-```
-spotipy
-aiohttp
-rich
-```
-
----
-
-## 🔹 Environment Variables
-
-Set the following environment variables (in `.env` or system environment):
-
-```
-SPOTIFY_CLIENT_ID=your_spotify_client_id
-SPOTIFY_CLIENT_SECRET=your_spotify_client_secret
+### Set Environment Variables
+Create a `.env` file:
+```dotenv
+SPOTIFY_CLIENT_ID=your_client_id
+SPOTIFY_CLIENT_SECRET=your_client_secret
 SPOTIFY_REDIRECT_URI=http://localhost:8888/callback
 ```
-
-Create these credentials at:  
-https://developer.spotify.com/dashboard
+[Spotify Developer Dashboard](https://developer.spotify.com/dashboard)
 
 ---
 
-## 🔹 Project Structure
-
+## Project Structure
 ```
-spotify-mcp/
-├── server.py         # MCP tool server (Claude + CLI backend)
-├── main.py           # CLI interactive mode
-├── README.md
+trackcraft/
+├── server.py           # MCP Server (AI + CLI entry)
+├── main.py             # CLI interface logic
 ├── requirements.txt
+├── README.md
 ├── .gitignore
+└── .env (not committed)
 ```
 
 ---
 
-## 🔹 Claude Tool Call Example
+## Development Scripts
 
-```json
-{
-  "tool_name": "create_playlist",
-  "arguments": {
-    "playlist_name": "Late Night Coding",
-    "public": false
-  }
-}
-```
-
-The server will create a playlist instantly using the Spotify Web API.
+| Command                | Description                       |
+|------------------------|-----------------------------------|
+| `python server.py --mode=manual` | Run CLI menu                  |
+| `python server.py --mode=ai`     | Start Claude-compatible MCP   |
 
 ---
 
-## 🔹 Git Ignore Setup
+## License
 
-```
-# Python
-__pycache__/
-*.py[cod]
-*.log
+This project is licensed under the **MIT License**. See full text at [opensource.org](https://opensource.org/license/mit/)
 
-# Envs
-.venv/
-.env
-*.cache
-.spotify_mcp_cache
-
-# Editor & OS
-.vscode/
-.DS_Store
-Thumbs.db
-```
+This project is licensed under the Apache 2.0 License, offering broad permissions with clear conditions. Read more at (https://apache.org/licenses/LICENSE-2.0)
 
 ---
 
-## 🔹 License
-
-MIT License.
-
-Free to use, modify, and distribute with credit.
+## Author
+Built for control freaks, CLI nerds, and AI automation lovers.
 
 ---
 
-## 🔹 Author
-
-Built by [Your Name]  
-Designed for AI automation and terminal productivity.
-
----
-
-## 🔹 Final Words
-
-Spotify-MCP is minimal by design, but powerful in capability.  
-Whether you're controlling playback through Claude or managing music directly from the terminal — this project gives you the freedom and flow you need.
+<div align="center">
+  <strong>Star this repo if Spotipy made your music smarter.</strong>
+</div>
