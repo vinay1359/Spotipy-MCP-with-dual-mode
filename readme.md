@@ -15,7 +15,7 @@ Built in Python using `spotipy`, `aiohttp`, and `rich`, it supports both real-ti
 
 ---
 
-## 🎵 Supported Features
+## Supported Features
 
 | Feature                     | Description                              | Free Account | Premium Required |
 |----------------------------|------------------------------------------|--------------|------------------|
@@ -32,7 +32,7 @@ Built in Python using `spotipy`, `aiohttp`, and `rich`, it supports both real-ti
 
 ---
 
-## 🚀 Modes of Operation
+## Modes of Operation
 
 ### 1. Manual Mode (CLI)
 
@@ -52,7 +52,7 @@ Enables MCP tool server mode, allowing an AI agent to send structured tool calls
 
 ---
 
-## ⚙️ Installation & Setup
+## Installation & Setup
 
 ### Requirements
 
@@ -79,7 +79,7 @@ SPOTIFY_REDIRECT_URI=http://localhost:8888/callback
 
 ---
 
-## 🗂️ Project Structure
+##  Project Structure
 
 ```
 spotipy-mcp-server/
@@ -93,7 +93,7 @@ spotipy-mcp-server/
 
 ---
 
-## 🔧 Commands
+## Commands
 
 | Command | Description |
 |---------|-------------|
@@ -102,7 +102,7 @@ spotipy-mcp-server/
 
 ---
 
-## 📄 License
+## License
 
 This project is open source and dual-licensed:
 
@@ -110,6 +110,8 @@ This project is open source and dual-licensed:
 - **Apache 2.0 License** — [apache.org/licenses/LICENSE-2.0](https://www.apache.org/licenses/LICENSE-2.0)
 
 Use it freely with attribution. Choose the license that fits your use case best.
+
+
 
 
 <div align="center">
