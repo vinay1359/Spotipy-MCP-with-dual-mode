@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://via.placeholder.com/900x200/0f0f0f/00ff88?text=Spotipy+MCP+Server" alt="Spotipy MCP Server Banner" width="100%" />
+  <img src="https://static.vecteezy.com/system/resources/previews/011/012/197/non_2x/abstract-green-black-and-white-wall-paint-background-vector.jpg" alt="Spotipy MCP Server Banner" width="100%" />
 </p>
 
 # Spotipy MCP Server
