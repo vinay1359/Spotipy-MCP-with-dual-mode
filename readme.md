@@ -1,5 +1,12 @@
 # Spotipy MCP Server
 
+<p align="center">
+  <img src="https://via.placeholder.com/800x200?text=Trackcraft+MCP+Server" alt="Trackcraft Banner" width="100%" />
+  <h1 align="center">Spotipy MCP Server</h1>
+  <p align="center"><i>AI-ready Spotify controller for CLI and Claude integration</i></p>
+</p>
+
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/license/mit/)
 [![Python](https://img.shields.io/badge/Python-3.9%2B-blue)](https://www.python.org/)
 [![CLI Support](https://img.shields.io/badge/Mode-CLI%20%7C%20AI-green)](#)
@@ -88,16 +95,11 @@ trackcraft/
 
 ## License
 
-This project is licensed under the **MIT License**. See full text at [opensource.org](https://opensource.org/license/mit/)
+This project is licensed under the **MIT License**. See full text at [MIT license](https://opensource.org/license/mit/)
 
-This project is licensed under the Apache 2.0 License, offering broad permissions with clear conditions. Read more at (https://apache.org/licenses/LICENSE-2.0)
+This project is licensed under the Apache 2.0 License, offering broad permissions with clear conditions.Read more at [Apache 2.0 License](https://apache.org/licenses/LICENSE-2.0)
 
----
 
-## Author
-Built for control freaks, CLI nerds, and AI automation lovers.
-
----
 
 <div align="center">
   <strong>Star this repo if Spotipy made your music smarter.</strong>
