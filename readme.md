@@ -1,7 +1,3 @@
-<p align="center">
-  <img src="https://static.vecteezy.com/system/resources/previews/011/012/197/non_2x/abstract-green-black-and-white-wall-paint-background-vector.jpg" alt="Spotipy MCP Server Banner" width="100%" />
-</p>
-
 # Spotipy MCP Server
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/license/mit/)
@@ -79,7 +75,7 @@ SPOTIFY_CLIENT_SECRET=your_client_secret
 SPOTIFY_REDIRECT_URI=http://localhost:8888/callback
 ```
 
-Register your app at: [Spotify Developer Dashboard](https://developer.spotify.com/dashboard)
+[Spotify Developer Dashboard](https://developer.spotify.com/dashboard)
 
 ---
 
@@ -115,13 +111,6 @@ This project is open source and dual-licensed:
 
 Use it freely with attribution. Choose the license that fits your use case best.
 
----
-
-## 👤 Author
-
-Built by [Your Name] — made for developers who want hands-on music control from the terminal or intelligent automation via AI.
-
----
 
 <div align="center">
   <strong>Star this repo if Spotipy MCP made your Spotify experience smarter.</strong>
