@@ -17,6 +17,8 @@ Built in Python using `spotipy`, `aiohttp`, and `rich`, it supports both real-ti
 
 ## Supported Features
 
+Depending on whether the Spotify account is free or premium, the available features differ
+
 | Feature                     | Description                              | Free Account | Premium Required |
 |----------------------------|------------------------------------------|--------------|------------------|
 | Spotify Authentication     | OAuth login using client credentials     | ✅            | ✅                |
